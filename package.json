@@ -10,7 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "mongoose": "^9.1.4"
-  }
+    "mongoose": "^9.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Romankvas/Random-Excuse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Romankvas/Random-Excuse/issues"
+  },
+  "homepage": "https://github.com/Romankvas/Random-Excuse#readme"
 }
