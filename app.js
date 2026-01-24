@@ -53,7 +53,14 @@ app.get('/api/excuse', async (req, res) => {
   }
 });
 
-
+app.delete('/api/excuses/clear', async (req, res) => {
+  try {
+    await Excuse.deleteMany({});
+    res.json({ message: "База повністю очищена!" });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 app.get('/api/excuse/:category', async (req, res) => {
   try {
     const { category } = req.params;
